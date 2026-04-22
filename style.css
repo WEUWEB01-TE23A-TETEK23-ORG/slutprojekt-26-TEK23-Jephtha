@@ -1,0 +1,109 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Site*/
+.container {
+    width: 1000px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "site_header site_header"
+        "site_content site_sidebar"
+        "site_footer site_footer";
+
+
+}
+
+body {
+    background-image: url(bilder/jungle.png);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+
+/*Header*/
+header {
+    grid-area: site_header;
+}
+
+header h1 {}
+
+header nav {}
+
+header nav a {}
+
+header nav a:hover {}
+
+header nav a.activ {}
+
+
+
+/*Main*/
+main {
+    margin: auto;
+    padding: 30px;
+    grid-area: site_content;
+    background-color: #000000b2;
+    border-radius: 6.7px;
+}
+
+main article {
+    padding: 30px;
+    margin: auto;
+}
+
+main h2 {}
+
+main article .date {}
+
+main article figure {
+    border: 1px solid #000000;
+}
+
+main article figure img {
+    width: 100%;
+}
+
+main article figcaption {}
+
+/*Aside*/
+aside {
+    grid-area: site_sidebar;
+    background-color: #000000b2;
+    border-radius: 3px;
+}
+
+aside h3 {}
+
+aside p {}
+
+footer {
+    background-color: #000000b2;
+    border-radius: 20px;
+    padding: 20px;
+    grid-area: site_footer;
+}
