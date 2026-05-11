@@ -39,8 +39,8 @@ ul {
 }
 
 body {
-    background-image: url(bilder/jungle.png);
-    background-size: contain;
+    background-image: url(./pictures/horizon.jpg);
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -48,41 +48,76 @@ body {
 /*Header*/
 header {
     grid-area: site_header;
+    align-content: center;
 }
 
-header h1 {}
+header .logo {}
 
-header nav {}
+h3 {
+    padding: 10px;
+}
 
-header nav a {}
 
-header nav a:hover {}
+header nav {
+    display: block;
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ff0026;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px #ff0000;
+    text-decoration: none;
+    text-align: left;
+    background-color: #000000cf;
+}
 
-header nav a.activ {}
+header nav a {
+    margin: auto;
+    padding: 3px;
+    font-size: 13px;
+    color: #9f9f9f;
+}
+
+header nav a.active_link {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+header nav a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav a:visited {
+    text-decoration: none;
+}
 
 
 
 /*Main*/
 main {
-    margin: auto;
-    padding: 30px;
     grid-area: site_content;
-    background-color: #000000b2;
-    border-radius: 6.7px;
+    display: block;
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ff0026;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px #ff0000;
+    text-decoration: none;
+    text-align: center;
+    background-color: #000000cf;
 }
 
 main article {
     padding: 30px;
-    margin: auto;
 }
 
 main h2 {}
 
-main article .date {}
-
-main article figure {
-    border: 1px solid #000000;
-}
+main article figure {}
 
 main article figure img {
     width: 100%;
@@ -93,17 +128,91 @@ main article figcaption {}
 /*Aside*/
 aside {
     grid-area: site_sidebar;
-    background-color: #000000b2;
-    border-radius: 3px;
+    display: block;
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ff0026;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px #ff0000;
+    text-decoration: none;
+    text-align: center;
+    background-color: #000000cf;
 }
 
-aside h3 {}
+aside h2 {
+    padding: 30px;
+}
 
-aside p {}
+aside p {
+    padding: 2px;
+}
+
+aside a {
+    margin: auto;
+    padding: 3px;
+    font-size: 13px;
+    color: #9f9f9f;
+}
+
+aside a.active_link {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+aside a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+aside a:visited {
+    text-decoration: none;
+}
 
 footer {
-    background-color: #000000b2;
-    border-radius: 20px;
-    padding: 20px;
     grid-area: site_footer;
+    display: block;
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ff0026;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px #ff0000;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+    background-color: #000000cf;
+}
+
+footer li {
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ff0026;
+    border-radius: 4px;
+    text-align: left;
+    padding: 10px;
+
+}
+
+footer h2 {
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ff0026;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+
+.clock {
+    display: block;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
 }
